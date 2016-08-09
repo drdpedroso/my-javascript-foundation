@@ -49,7 +49,6 @@ var gulp        = require('gulp'),
       .pipe(g.less())
       .pipe(g.concat('main.css'))
       .pipe(mobileFirst())
-      //.pipe(minifyCSS())
       .pipe(gulp.dest('./.tmp/css/main.css'))
       .pipe(gulp.dest('./app/css/main.css'))
       .pipe(g.cached('built-css'))
